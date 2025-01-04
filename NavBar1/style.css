@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+/* Imports the 'Montserrat' font from Google Fonts for consistent typography across elements */
+
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width/height */
+    padding: 0; /* Removes default padding from all elements */
+    margin: 0; /* Removes default margin from all elements */
+    background-color: #24252a; /* Sets a dark background color for the entire page */
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif; /* Applies Montserrat font to list items, links, and buttons */
+    font-weight: 500; /* Sets font weight to medium for readability */
+    font-size: 16px; /* Uniform font size */
+    color: #edf0f1; /* Light color for contrast against the dark background */
+    text-decoration: none; /* Removes underlines from links */
+}
+
+header {
+    display: flex; /* Uses flex layout to align child elements in a row */
+    justify-content: space-between; /* Spaces out elements on the left and right sides */
+    align-items: center; /* Centers items vertically within the header */
+    padding: 30px 10%; /* Adds padding, with more space on the sides for a centered layout */
+}
+
+.logo {
+    cursor: pointer; /* Changes cursor to pointer, indicating the logo is clickable */
+}
+
+.nav_links {
+    list-style: none; /* Removes default bullet points from list items */
+}
+
+.nav_links li {
+    display: inline-block; /* Displays each list item inline, allowing them to sit horizontally */
+    padding: 0px 20px; /* Adds spacing between list items */
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s; /* Smooth transition for hover effect on links */
+}
+
+.nav_links li a:hover {
+    color: #0088a9; /* Changes link color on hover for an interactive effect */
+}
+
+button {
+    padding: 9px 25px; /* Adds padding for a rounded, button-like appearance */
+    background-color: rgba(0, 136, 169, 1); /* Primary background color for the button */
+    border: none; /* Removes default border */
+    border-radius: 50px; /* Gives button a rounded shape */
+    cursor: pointer; /* Changes cursor to pointer to indicate button is clickable */
+    transition: all 0.3s ease 0s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8); /* Lightens button background on hover */
+}

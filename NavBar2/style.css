@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+/* Importing Montserrat font with specified weights for styling text */
+
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width/height */
+    padding: 0; /* Removes default padding from all elements */
+    margin: 0; /* Removes default margin from all elements */
+    background-color: #24252a; /* Sets a dark background color for the entire page */
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif; /* Applies Montserrat font to all list items, links, and buttons */
+    font-weight: 500; /* Sets medium font weight for a balanced look */
+    font-size: 16px; /* Standardizes font size for readability */
+    color: #edf0f1; /* Light text color for contrast against dark background */
+    text-decoration: none; /* Removes default underlines from links */
+}
+
+header {
+    display: flex; /* Uses flexbox to align child elements in a row */
+    justify-content: flex-end; /* Aligns navigation links and button to the right */
+    align-items: center; /* Centers items vertically within the header */
+    padding: 30px 10%; /* Adds spacing around the header for aesthetic padding */
+}
+
+.logo {
+    cursor: pointer; /* Adds a pointer cursor for interactivity */
+    margin-right: auto; /* Pushes the logo to the left by taking up available space */
+}
+
+.nav_links {
+    list-style: none; /* Removes default bullet points from list items */
+}
+
+.nav_links li {
+    display: inline-block; /* Displays each list item inline horizontally */
+    padding: 0px 20px; /* Adds space on either side of each link for better spacing */
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s; /* Smooth transition effect for color changes on hover */
+}
+
+.nav_links li a:hover {
+    color: #0088a9; /* Changes link color to a teal shade on hover for visual feedback */
+}
+
+button {
+    margin-left: 20px; /* Adds spacing between the button and the last nav link */
+    padding: 9px 25px; /* Adds padding for a comfortable button size */
+    background-color: rgba(0, 136, 169, 1); /* Teal background color for the button */
+    border: none; /* Removes default border */
+    border-radius: 50px; /* Rounds the button for a pill shape */
+    cursor: pointer; /* Adds pointer cursor for interactivity */
+    transition: all 0.3s ease 0s; /* Smooth transition effect for background color changes */
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8); /* Slightly reduces opacity on hover for a subtle effect */
+}

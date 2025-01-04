@@ -1,0 +1,84 @@
+/* Importing the "Montserrat" font from Google Fonts for consistent typography */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+/* Global styles for all elements */
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in the total element width and height */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    background-color: #24252a; /* Sets a dark background color for the entire page */
+}
+
+/* Styles for list items (li), anchor tags (a), and buttons */
+li, a, button {
+    font-family: "Montserrat", sans-serif; /* Sets the font family to "Montserrat" for better readability */
+    font-weight: 500; /* Sets the font weight to 500 for medium thickness */
+    font-size: 16px; /* Sets the font size to 16px for consistent text size */
+    color: #edf0f1; /* Sets the text color to a light off-white for contrast against the dark background */
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Header styles */
+header {
+    display: flex; /* Uses flexbox for aligning header items */
+    justify-content: flex-end; /* Aligns all elements to the right side of the header */
+    align-items: center; /* Vertically aligns items at the center */
+    padding: 30px 10%; /* Adds padding for spacing from edges */
+}
+
+/* Styles for the logo image */
+.logo {
+    cursor: pointer; /* Changes cursor to pointer on hover to indicate it's clickable */
+    order: 3; /* Places the logo as the third item in the flex order (to the right) */
+    margin-left: auto; /* Pushes the logo to the far right side */
+}
+
+/* Navigation styles */
+nav {
+    order: 1; /* Ensures the navigation menu appears first (left side) */
+}
+
+.nav_links {
+    list-style: none; /* Removes default list styling */
+}
+
+.nav_links li {
+    display: inline-block; /* Displays the list items horizontally */
+    padding: 0px 20px; /* Adds padding to the left and right of each list item */
+}
+
+/* Ensures the first navigation link does not have extra padding on the left */
+.nav_links li:nth-child(1) {
+    padding: 0px 20px 0px 0px; /* Removes left padding from the first item */
+}
+
+/* Link styling within the navigation */
+.nav_links li a {
+    transition: all 0.3s ease 0s; /* Adds a smooth transition for hover effects */
+}
+
+/* Hover effect on the navigation links */
+.nav_links li a:hover {
+    color: #0088a9; /* Changes the link color to a turquoise shade on hover */
+}
+
+/* CTA (Call to Action) button container */
+.cta {
+    order: 2; /* Places the CTA button second in the flex order */
+}
+
+/* Button styling */
+button {
+    margin-left: 20px; /* Adds spacing between the button and other elements */
+    padding: 9px 25px; /* Adds padding inside the button for better size and spacing */
+    background-color: rgba(0, 136, 169, 1); /* Sets a turquoise background color */
+    border: none; /* Removes the default border */
+    border-radius: 50px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to pointer to indicate it's clickable */
+    transition: all 0.3s ease 0s; /* Adds smooth transition effects for hover */
+}
+
+/* Hover effect on the button */
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8); /* Slightly darkens the button color on hover */
+}
